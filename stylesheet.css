@@ -1,0 +1,225 @@
+/*Global*/
+h1, h2, h3 , a {
+    font-family: 'Roboto Mono', monospace;
+    color: #B35A0C; 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0px;
+
+}
+
+main {
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+.navbar__logo {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    grid-area: navbar__logo;
+}
+
+/* #full-screen {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: none;
+} */
+
+#squareyees-logo-phone {
+    display: none;
+}
+
+.cta-small {
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.cta-small:hover {
+    background-color: #7fade6;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'navbar__logo navbar navbar';
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-icon {
+    display: none;
+}
+
+.login-or-create {
+    float: right;
+}
+
+.navbar {
+    grid-area: navbar;
+    margin: 20px;
+    position:relative;
+}
+
+.navigation-links__specific {
+    color: #B35A0C;
+    text-decoration: none;
+    margin-right: 52px;
+    white-space: nowrap;
+}
+
+.navigation-links__specific:hover {
+    /* text-decoration: underline; */
+    border-bottom: 3px solid #B35A0C;
+}
+
+.navigation-links {
+    /* position: relative;
+    margin-top: 150px;
+    margin-left: 285px; */
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2vw;
+}
+
+.footer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+    white-space: nowrap;
+}
+
+/*Home page*/
+
+.home-page-img {
+    max-width: 400px;
+    max-height: 267px;
+    border: 5px solid #B35A0C;
+}
+
+.homepage-content {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.homepage-content-welcome {
+    margin: 0px;
+}
+
+.homepage-content-text {
+    margin: 0px 20px;
+}
+
+.mydivider {
+    border-top: 3px solid #B35A0C;
+    margin-bottom: 5px;
+
+}
+
+.homepage-content-filmmakers {
+    margin: 0px;
+}
+
+.underline {
+    border-bottom: 3px solid #B35A0C;
+}
+
+/* #people-working-together {grid-area: people-working-together;}
+#filmmakers {grid-area: filmmakers;}
+.content-intro-welcome {grid-area: welcome;}
+.content-intro-filmmakers {grid-area: filmmakers;} */
+
+div h1, div h2, div p {
+    
+}
+
+/* Homepage for phone */
+
+@media (max-width: 700px) {
+
+    .homepage-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .phonewrapper div:first-child {
+        order: 1;
+    }
+
+    .logo-hamburger {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navbar__logo {
+        display: none;
+    }
+
+    .home-page-img {
+        margin-top: 20px;
+        margin: 20px;
+    }
+
+    #squareyees-logo-phone {
+        display: block;
+        width: 250px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #hamburger-icon{
+        display: block;
+        width: 35px;
+        height: 22px;
+        margin-top: 30px;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #hamburger-menu:checked ~ .navbar {
+        display: block;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    } 
+
+}

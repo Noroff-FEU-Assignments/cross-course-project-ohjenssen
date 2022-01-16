@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!--Roboto Mono font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Libre+Baskerville&family=Roboto&family=Roboto+Mono&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!--Montserrat font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Libre+Baskerville&family=Montserrat&family=Roboto&family=Roboto+Mono&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="squareEyesLogo.png" alt="Square Eyes Logo" class="navbar__logo"/></a>
+            <a href="index.html"><img src="squareEyesLogo-phone.png" id="squareyees-logo-phone" alt="Square Eyes Logo"></a>
+            <label for="hamburger-menu" id="hamburger-icon"><img src="hamburger-meny.png"/></label>
+            <input type="checkbox" id="hamburger-menu">
+            <div class="navbar">
+                <div class="login-or-create">
+                    <a href="signIn.html" class="cta-small">Sign in</a>
+                    <a href="createAccount" class="cta-small">Create account</a>
+                </div>
+                <div class="navigation-links">
+                    <a href="index.html" class="navigation-links__specific underline">Home</a>
+                    <a href="films.html" class="navigation-links__specific">Films</a>
+                    <a href="about.html" class="navigation-links__specific">About us</a>
+                    <a href="contact.html" class="navigation-links__specific">Contact</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="homepage-content phonewrapper">
+                <img src="people-working-together-new-film.jpg" class="home-page-img">
+                <div class="homepage-content-welcome">
+                    <h1 class="homepage-content-text ">Welcome to Square Eyes</h1>
+                    <hr class="homepage-content-text mydivider">
+                    <p class="homepage-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet suspendisse interdum. At erat pellentesque adipiscing commodo elit. Tincidunt dui ut ornare lectus sit amet est. Ut porttitor leo a diam. Vulputate ut pharetra sit amet. Scelerisque eleifend donec pretium vulputate sapien. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor sit amet consectetur adipiscing elit duis. Nulla pharetra diam sit amet nisl suscipit adipiscing. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Accumsan tortor posuere ac ut consequat. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Felis eget nunc lobortis mattis aliquam. Nunc consequat interdum varius sit amet mattis. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Sed turpis tincidunt id aliquet risus.
+                    </p>
+                </div>
+            </div>
+            <div class="homepage-content phonewrapper">
+                <img src="filmmakers.jpg" class="home-page-img" id="filmmakers">
+                <div class="homepage-content-filmmakers">
+                    <h1 class="homepage-content-text">Meet our filmmakers</h1>
+                    <hr class="homepage-content-text mydivider">
+                    <p class="homepage-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet suspendisse interdum. At erat pellentesque adipiscing commodo elit. Tincidunt dui ut ornare lectus sit amet est. Ut porttitor leo a diam. Vulputate ut pharetra sit amet. Scelerisque eleifend donec pretium vulputate sapien. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor sit amet consectetur adipiscing elit duis. Nulla pharetra diam sit amet nisl suscipit adipiscing. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Accumsan tortor posuere ac ut consequat. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Felis eget nunc lobortis mattis aliquam. Nunc consequat interdum varius sit amet mattis. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Sed turpis tincidunt id aliquet risus.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+    </body>
 </html>
