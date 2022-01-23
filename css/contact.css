@@ -1,0 +1,12 @@
+main {
+    margin: 10px;
+}
+
+.contact {
+    background-color: #D77E13;
+    padding: 10px;
+}
+
+textarea {
+    max-width: 50%;
+}

@@ -1,0 +1,17 @@
+main {
+    margin: 10px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-images-specific {
+    max-width: 300px;
+    border: 3px solid #D77E13;
+}
+
+.about-link {
+    border-bottom: 3px solid #D77E13;
+}
