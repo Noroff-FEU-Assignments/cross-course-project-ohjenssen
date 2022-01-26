@@ -1,0 +1,132 @@
+body {
+font-family: 'Montserrat', sans-serif;
+min-height: 100vh;
+margin: 0px;
+}
+
+header {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'header-section-one header-section-two'
+    'header-section-one header-section-three'
+    ;
+}
+
+.header-section {
+    min-height: 20px;
+    position: relative;
+}
+
+.header-section:nth-child(1){grid-area: header-section-one;}
+.header-section:nth-child(2){grid-area: header-section-two;}
+.header-section:nth-child(3){grid-area: header-section-three;}
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.navigation-links {
+    text-decoration: none;
+    color: #D77E13;;
+    margin: 0px 10px 0px 10px;
+    font-size: 2vw;
+    white-space: nowrap;
+}
+
+.navigation-links:hover {
+    border-bottom: 3px solid #D77E13;;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+.cta {
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    white-space: nowrap;
+    float: right;
+}
+
+.cta:hover {
+    background-color: #4f8edb;
+}
+
+img {
+    max-width: 400px;
+}
+
+h1, h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: #D77E13;;
+}
+
+hr {
+    border: 2px solid #D77E13;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.footer-links {
+    color: white;
+}
+
+.footer-links:hover {
+    border-bottom: 3px solid white;
+}
+
+/* Header and footer */
+@media (max-width: 800px) {
+
+    nav {
+        display: flex;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    .cta {
+        font-size: 8px;
+        background-color: #0052B5;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px;
+        white-space: nowrap;
+        float: right;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: grey;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+}

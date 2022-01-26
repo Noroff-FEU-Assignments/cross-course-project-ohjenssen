@@ -1,0 +1,76 @@
+main {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#purchase {
+    font-size: 30px;
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.edit {
+    color: #D77E13;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.information {
+    display: flex;
+    max-width: 1000px;
+}
+
+.pay-information-specific:nth-child(1) {grid-area: pay-information-one}
+.pay-information-specific:nth-child(2) {grid-area: pay-information-two}
+.pay-information-specific:nth-child(3) {grid-area: pay-information-three}
+.pay-information-specific:nth-child(4) {grid-area: pay-information-four}
+.pay-information-specific:nth-child(5) {grid-area: pay-information-five}
+
+
+.pay-information {
+    margin-left: 50px;
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+    'pay-information-one pay-information-one'
+    'pay-information-two pay-information-three'
+    'pay-information-four pay-information-four'
+    'pay-information-five pay-information-five'
+    ;
+}
+
+#card-number {
+    object-fit: cover;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+     
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pay-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 650px){
+     
+    .pay-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
