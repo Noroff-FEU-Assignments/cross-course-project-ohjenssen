@@ -1,0 +1,53 @@
+main {
+    margin: 10px;
+}
+
+
+.profile-picture {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #D77E13;
+}
+
+.account-information {
+    display: flex;
+}
+
+.details-one {
+    flex: 1;
+}
+
+.details-two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-images {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #D77E13;
+}
+
+.cta-large {
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.cta-large:hover {
+    background-color: #4f8edb;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+    .account-informaton {
+        flex-direction: wrap;
+    }
+}

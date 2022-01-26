@@ -15,3 +15,24 @@
 .home-link {
     border-bottom: 3px solid #D77E13;
 }
+
+@media (max-width: 1200px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-image {
+        max-height: 175px;
+        max-width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}

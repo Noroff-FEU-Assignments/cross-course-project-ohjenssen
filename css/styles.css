@@ -5,7 +5,6 @@ margin: 0px;
 }
 
 header {
-    /* background-color: grey; */
     display: grid;
     gap: 10px;
     padding: 10px;
@@ -16,7 +15,6 @@ header {
 }
 
 .header-section {
-    /* background-color: lightblue; */
     min-height: 20px;
     position: relative;
 }
@@ -43,6 +41,10 @@ nav {
     border-bottom: 3px solid #D77E13;;
 }
 
+main {
+    padding-bottom: 100px;
+}
+
 .cta {
     background-color: #0052B5;
     color: white;
@@ -52,6 +54,10 @@ nav {
     margin: 10px;
     white-space: nowrap;
     float: right;
+}
+
+.cta:hover {
+    background-color: #4f8edb;
 }
 
 img {
@@ -70,9 +76,14 @@ hr {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: grey;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 30px;
 }
 
@@ -82,4 +93,40 @@ footer {
 
 .footer-links:hover {
     border-bottom: 3px solid white;
+}
+
+/* Header and footer */
+@media (max-width: 800px) {
+
+    nav {
+        display: flex;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    .cta {
+        font-size: 8px;
+        background-color: #0052B5;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px;
+        white-space: nowrap;
+        float: right;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: grey;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
 }

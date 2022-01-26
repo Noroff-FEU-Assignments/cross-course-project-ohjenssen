@@ -38,7 +38,7 @@ h3 {
 .movie-section {
     display: grid;
     gap: 20px;
-    padding: 10px;
+    padding-top: 10px;
     grid-template-areas:
     'movie-section-one movie-section-two movie-section-three'
     'movie-section-four movie-section-five movie-section-six'
@@ -53,6 +53,10 @@ h3 {
     border: 3px solid #D77E13;
 }
 
+.movie-images:hover {
+    filter: blur(3px);
+}
+
 .movie-search {
     display: flex;
 }
@@ -65,11 +69,70 @@ h3 {
     border-radius: 5px;
 }
 
-[type="checkbox"]{
-    border: 5px solid #D77E13;
-}
-
 .categories {
     margin-top: 10px;
 }
 
+@media (min-width: 300px) and (max-width: 629px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categories div {
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+
+    .movie-images {
+        height: 150px;
+        min-width: 280px;
+        object-fit: cover;
+    }
+
+    .movie-section {
+        display: inline;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 800px) { 
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categories div {
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+
+    .movie-images {
+        height: 150px;
+        min-width: 280px;
+        object-fit: cover;
+    }
+
+    .movie-section {
+        display: grid;
+        grid-template-areas:
+        'movie-section-two movie-section-one' 
+        'movie-section-three movie-section-four' 
+        'movie-section-five movie-section-six'
+        'movie-section-seven movie-section-eight'
+        'movie-section-nine movie-section-nine'
+        ;
+    }
+
+}

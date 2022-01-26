@@ -15,3 +15,30 @@ main {
 .about-link {
     border-bottom: 3px solid #D77E13;
 }
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    p {
+        font-size: 10px;
+    }
+
+    .about-images {
+        flex-wrap: wrap;
+    }
+
+    .about-images-specific {
+        max-width: 40%;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1280px) {
+    .about-images {
+        flex-wrap: wrap;
+    }
+
+    .about-images-specific {
+        
+        margin: 5px;
+    }
+}

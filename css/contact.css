@@ -10,3 +10,18 @@ main {
 textarea {
     max-width: 50%;
 }
+
+.icons {
+    max-height: 20px;
+    width: 20px;
+}
+
+.contact-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.contact-information {
+    display: flex;
+}
