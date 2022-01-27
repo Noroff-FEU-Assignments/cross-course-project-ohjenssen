@@ -16,7 +16,17 @@
     border-bottom: 3px solid #D77E13;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 300px) and (max-width: 700px){
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
 
     .main-content {
         display: flex;
@@ -28,11 +38,4 @@
         max-width: 100%;
     }
 
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 10px;
-    }
 }

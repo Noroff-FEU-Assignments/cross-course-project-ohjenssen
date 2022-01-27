@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the paypage of Square Eyes">
+        <meta name="description" content="Bad Moon Rising-movie created by John Doe">
         <!--Roboto Mono font-->
         <link rel="preconnect" href="https://fonts.googleapis.com"/> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
@@ -14,13 +14,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Libre+Baskerville&family=Montserrat&family=Roboto&family=Roboto+Mono&family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
         <!--Stylesheet-->
         <link href="/css/styles.css" rel="stylesheet"/>
-        <link href="css/pay-page.css" rel="stylesheet"/>
-        <title>Square Eyes | Purchase</title>
+        <link href="css/film-page.css" rel="stylesheet"/>
+        <title>Square Eyes | Bad Moon Rising</title>
     </head>
     <body>
         <header>
             <section class="header-section">
-                <a href="index.html" alt="Square Eyes Logo"><img src="images/squareEyesLogo.png"></a>
+                <a href="index.html"><img src="images/squareEyesLogo.png" alt="Square Eyes"></a>
             </section>
             <section class="header-section">
                 <a href="accountpage.html" class="cta">Sign in</a>
@@ -36,37 +36,39 @@
             </section>
         </header>
         <main>
-            <h1>Purchase</h1>
+            <h1>Bad Moon Rising</h1>
             <hr>
-            <section class="information">
+            <section  class="movie-information">
                 <div>
-                    <a class="edit">Edit</a>
-                    <p>Name</p>
-                    <h3>John Doe</h3>
-                    <p>Email</p>
-                    <h3>JohnDoe@hotmail.com</h3>
-                    <p>Phone number</p>
-                    <h3>40414243</h3>
+                    <img src="images/movieposters/bad-moon-rising.jpg" class="main-movie" alt="Image of the movie Bad Moon Rising">
                 </div>
-                <div class="pay-information">
-                    <div class="pay-information-specific">
-                        <p>Card number</p>
-                        <textarea id="card-number" name="card-number"></textarea>
-                    </div>
-                    <div class="pay-information-specific">
-                        <p>Expiration date</p>
-                        <textarea id="expiration-date" name="expiration-date"></textarea>
-                    </div>
-                    <div class="pay-information-specific">
-                        <p>CVC</p>
-                        <textarea id="cvc" name="cvc"></textarea>
-                    </div>
-                    <div class="pay-information-specific">
-                        <input type="submit" value="Purchase" id="purchase">
-                    </div>
-                    <div class="pay-information-specific">
-                        <p>Upon purchasing you will be redirected to a page where you can watch the film. The film will then be available for 24  hours.</p>
-                    </div>
+                <div class="movie-information-text">
+                    <p>Short about the movie. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Director: John Doe</p>
+                    <p>Actors: Jim Doe, Jane Doe</p>
+                    <p>Year: 2021</p>
+                    <a href="pay-page.html" class="cta-large">Watch</a>
+                </div> 
+            </section>
+            <h3>About the creator</h3>
+            <p>A short sentence about the creators behind the movie to hopefully make the user curious and click on this link. <a href="about.html" class="read-more">Read more.</a></p>
+            <h3>More like this</h3>
+            <section class="more-like-this">
+                <div class="other-movies">
+                    <img src="images/movieposters/danger-zone.jpg" class="movie-images" alt="Image of the movie Danger Zone">
+                    <p>Danger Zone</p>
+                </div>
+                <div class="other-movies">
+                    <img src="images/movieposters/the-last-man.jpg" class="movie-images" alt="Image of the movie The Last Man">
+                    <p>The Last Man</p>
+                </div>
+                <div class="other-movies">
+                    <img src="images/movieposters/invasion.jpg" class="movie-images" alt="Image of the movie Invasion">
+                    <p>Invasion</p>
+                </div>
+                <div class="other-movies">
+                    <img src="images/movieposters/halloween-chills.png" class="movie-images" alt="Image of the movie Halloween Chills">
+                    <p>Halloween Chills</p>
                 </div>
             </section>
         </main>

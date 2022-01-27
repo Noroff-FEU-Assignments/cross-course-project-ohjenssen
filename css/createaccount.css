@@ -20,6 +20,11 @@ main {
     border: 3px solid #D77E13;
 }
 
+.read-more {
+    text-decoration: none;
+    color: #D77E13;
+}
+
 @media (min-width: 300px) and (max-width: 420px) {
     .user-information {
         display: flex;

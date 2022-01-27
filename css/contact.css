@@ -24,4 +24,5 @@ textarea {
 
 .contact-information {
     display: flex;
+    margin-top: 10px;
 }
