@@ -16,7 +16,7 @@ main {
     border-bottom: 3px solid #D77E13;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 600px) {
 
     p {
         font-size: 10px;
