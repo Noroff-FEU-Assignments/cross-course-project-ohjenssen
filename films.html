@@ -30,95 +30,55 @@
     </head>
     <body>
         <header>
-            <section class="header-section">
-                <a href="index.html"><img src="images/squareEyesLogo.png"></a>
-            </section>
-            <section class="header-section">
-                <a href="accountpage.html" class="cta">Sign in</a>
-                <a href="createaccount.html" class="cta">Create account</a>
-            </section>
-            <section class="header-section">
+            <a href="index.html"><img src="images/squareEyesLogo-phone.png" alt="Square Eyes Logo" class="logo"></a>
+            <div class="hamburger_icon_and_menu">
+                <label for="hamburger_menu"><img src="images/icons/hamburger-icon_squareEyes.png" id="hamburger_icon" alt="hamburger-menu"></label>
+                <input type="checkbox" id="hamburger_menu">
                 <nav>
                     <a href="index.html" class="navigation-links">Home</a>
-                    <a href="films.html" class="navigation-links films-link">Films</a>
+                    <a href="films.html" class="navigation-links active-link">Films</a>
                     <a href="about.html" class="navigation-links">About us</a>
                     <a href="contact.html" class="navigation-links">Contact</a>
+                    <a href="accountpage.html" class="cta">Sign in</a>
+                    <a href="createaccount.html" class="cta">Create account</a>
                 </nav>
-            </section>
+            </div>
         </header>
         <main>
-            <h1 class="browser-container">Browse Films</h1>
-            <hr class="browser-container">
-            <section class="main-content">
-                <section>
-                    <div class="movie-search">
-                        <h2>Search</h2>
-                        <input type="text" name="search-films" id="search-films">
+            <section class="container">
+                <div class="headline">
+                    <h1>Browse films</h1>
+                    <div>
+                        <p>Shopping cart:</p>
+                        <p class="cart-items"></p>
+                        <div class="subtotal"></div>
                     </div>
-                    <h4>Categories</h4>
-                    <div class="categories">
-                            <div>
-                                <input type="checkbox" name="action" value="action" id="action">
-                                <label for="action">Action</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="drama" value="drama" id="drama">
-                                <label for="drama">Drama</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="horror" value="horror" id="horror">
-                                <label for="horror">Horror</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="sci-fi" value="sci-fi" id="sci-fi">
-                                <label for="sci-fi">Sci-fi</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="thriller" value="thriller" id="thriller">
-                                <label for="thriller">Thriller</label>
-                            </div>
-                    </div>
-                </section>
-                <section class="main-content">
-                </section>
-            <section class="movie-section">
-                    <section class="movie">
-                        <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/3-10-to-lillehammer.jpg" class="movie-images" alt="Image of the movie 3:10 To Lillehammer"></a>
-                        <h3>3:10 To Lillehammer</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-bad_moon_rising.html"><img src="images/movieposters/bad-moon-rising.jpg" class="movie-images" alt="Image of the movie Bad Moon Rising"></a>
-                        <h3>Bad Moon Rising</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-danger_zone.html"><img src="images/movieposters/danger-zone.jpg" class="movie-images" alt="Image of the movie Danger Zone"></a>
-                        <h3>Danger Zone</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-halloween_chills.html"><img src="images/movieposters/halloween-chills.png" class="movie-images" alt="Image of the movie Halloween Chills"></a>
-                        <h3>Halloween Chills</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-invasion.html"><img src="images/movieposters/invasion.jpg" class="movie-images" alt="Image of the movie Invasion"></a>
-                        <h3>Invasion</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/love-is-in-the-air.png" class="movie-images" alt="Image of the movie Love Is In The Air"></a>
-                        <h3>Love Is In The Air</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/peter-the-cat.jpg" class="movie-images" alt="Image of the movie Peter The Cat"></a>
-                        <h3>Peter The Cat</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/the-last-man.jpg" class="movie-images" alt="Image of the movie The Last Man"></a>
-                        <h3>The Last Man</h3>
-                    </section>
-                    <section class="movie">
-                        <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/the-stars-in-our-heart.jpg" class="movie-images" alt="Image of the movie The Stars In Our Hearts"></a>
-                        <h3>The Stars In Our Hearts</h3>
-                    </section>
-                </section>
+                </div>
+                <h4>Categories</h4>
+                <div class="categories">
+                        <div>
+                            <input type="checkbox" name="action" value="action" id="action">
+                            <label for="action">Action</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="drama" value="drama" id="drama">
+                            <label for="drama">Drama</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="horror" value="horror" id="horror">
+                            <label for="horror">Horror</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sci-fi" value="sci-fi" id="sci-fi">
+                            <label for="sci-fi">Sci-fi</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="thriller" value="thriller" id="thriller">
+                            <label for="thriller">Thriller</label>
+                        </div>
+                </div>
+                <div class="movie-section">
+                </div>
             </section>
         </main>
         <footer>
@@ -127,5 +87,7 @@
             <a href="about.html" class="navigation-links footer-links">About us</a>
             <a href="contact.html" class="navigation-links footer-links">Contact</a>
         </footer>
+        <script src="js/products.js"></script>
+        <script src="js/addtocart.js"></script>
     </body>
 </html>

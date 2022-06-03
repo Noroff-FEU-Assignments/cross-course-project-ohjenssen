@@ -5,45 +5,100 @@ margin: 0px;
 }
 
 header {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-    grid-template-areas: 
-    'header-section-one header-section-two'
-    'header-section-one header-section-three'
-    ;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header-section {
-    min-height: 20px;
-    position: relative;
+.logo {
+    width: 300px;
 }
 
-.header-section:nth-child(1){grid-area: header-section-one;}
-.header-section:nth-child(2){grid-area: header-section-two;}
-.header-section:nth-child(3){grid-area: header-section-three;}
+.headline {
+    border-bottom: 4px solid #D77E13;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline div {
+    display: flex;
+    align-items: center;
+}
+
+.cart-items {
+    margin: 5px;
+    display: flex;
+}
+
+.cart-item:hover {
+    background-color: #4f8edb;
+}
+
+.cart-item {
+    background-color: #0052B5;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Hamburger menu */
+
+.hamburger_icon_and_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#hamburger_icon {
+    width: 30px;
+    margin: 3px;
+}
+
+#hamburger_menu {
+    display: none;
+}
 
 nav {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    display: none;
 }
+
+#hamburger_menu:checked ~ nav {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-decoration: none;
+    color: #F3F3F3;
+    position: fixed;
+    top: 75px;
+    opacity: 100%;
+}
+
+/* Navigation links */
 
 .navigation-links {
     text-decoration: none;
     color: #D77E13;;
-    margin: 0px 10px 0px 10px;
-    font-size: 2vw;
+    margin: 10px;
     white-space: nowrap;
 }
 
 .navigation-links:hover {
-    border-bottom: 3px solid #D77E13;;
+    border-bottom: 3px solid #D77E13;
 }
 
-main {
-    padding-bottom: 100px;
-}
+.active-link {
+    border-bottom: 3px solid #D77E13;
+} 
+
+/* Buttons */
 
 .cta {
     background-color: #0052B5;
@@ -60,20 +115,21 @@ main {
     background-color: #4f8edb;
 }
 
-img {
-    max-width: 400px;
+.cta-large {
+    font-size: 30px;
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 3px solid #cedcee;
 }
 
-h1, h2 {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-size: 35px;
-    color: #D77E13;;
+.cta-large:hover {
+    background-color: #4f8edb;
 }
 
-hr {
-    border: 2px solid #D77E13;
-}
+/* Footer */
 
 footer {
     position: fixed;
@@ -95,38 +151,72 @@ footer {
     border-bottom: 3px solid white;
 }
 
-/* Header and footer */
-@media (max-width: 800px) {
+/* General */
 
+main {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 96%;
+}
+
+.movie-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.movie-thumbnail-link {
+    margin: 5px;
+}
+
+.movie-thumbnail {
+    width: 100%;
+    border: 2px solid #D77E13;
+}
+
+h1, h2 {
+    margin-bottom: 0px;
+    font-size: 32px;
+    color: #D77E13;
+}
+
+hr {
+    border: 2px solid #D77E13;
+}
+
+/* About us page */
+.about-images {
+    width: 300px;
+    border: 3px solid #D77E13;
+}
+
+/* Header and footer */
+@media (min-width: 600px) {
+    .hamburger_icon_and_menu {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    
+    #hamburger_icon {
+        display: none;
+    }
+    
     nav {
         display: flex;
+        flex-wrap: wrap;
+        width: 310px;
     }
+}
 
-    img {
-        max-width: 100px;
-    }
+@media (max-width: 800px) {
 
-    .cta {
-        font-size: 8px;
-        background-color: #0052B5;
-        color: white;
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin: 10px;
-        white-space: nowrap;
-        float: right;
-    }
 
     footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: grey;
-        text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
-        margin-top: 30px;
     }
 }

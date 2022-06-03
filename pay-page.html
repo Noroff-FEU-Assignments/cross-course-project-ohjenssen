@@ -30,54 +30,65 @@
     </head>
     <body>
         <header>
-            <section class="header-section">
-                <a href="index.html" alt="Square Eyes Logo"><img src="images/squareEyesLogo.png"></a>
-            </section>
-            <section class="header-section">
-                <a href="accountpage.html" class="cta">Sign in</a>
-                <a href="createaccount.html" class="cta">Create account</a>
-            </section>
-            <section class="header-section">
+            <a href="index.html"><img src="images/squareEyesLogo-phone.png" alt="Square Eyes Logo" class="logo"></a>
+            <div class="hamburger_icon_and_menu">
+                <label for="hamburger_menu"><img src="images/icons/hamburger-icon_squareEyes.png" id="hamburger_icon" alt="hamburger-menu"></label>
+                <input type="checkbox" id="hamburger_menu">
                 <nav>
-                    <a href="index.html" class="navigation-links home-link">Home</a>
+                    <a href="index.html" class="navigation-links active-link">Home</a>
                     <a href="films.html" class="navigation-links">Films</a>
                     <a href="about.html" class="navigation-links">About us</a>
                     <a href="contact.html" class="navigation-links">Contact</a>
+                    <a href="accountpage.html" class="cta">Sign in</a>
+                    <a href="createaccount.html" class="cta">Create account</a>
                 </nav>
-            </section>
-        </header>
+            </div>
+    </header>
         <main>
-            <h1>Purchase</h1>
-            <hr>
-            <section class="information">
-                <div>
-                    <a class="edit">Edit</a>
-                    <p>Name</p>
-                    <h3>John Doe</h3>
-                    <p>Email</p>
-                    <h3>JohnDoe@hotmail.com</h3>
-                    <p>Phone number</p>
-                    <h3>40414243</h3>
+            <section class="container">
+                <div class="headline">
+                    <h1>Browse films</h1>
+                    <div>
+                        <p>Shopping cart:</p>
+                        <p class="cart-items"></p>
+                        <div class="subtotal"></div>
+                    </div>
                 </div>
-                <div class="pay-information">
-                    <div class="pay-information-specific">
-                        <p>Card number</p>
-                        <textarea id="card-number" name="card-number"></textarea>
+                <div class="information">
+                    <div>
+                        <a href ="createaccount.html" class="edit">Edit</a>
+                        <p>Name</p>
+                        <h3>John Doe</h3>
+                        <p>Email</p>
+                        <h3>JohnDoe@hotmail.com</h3>
+                        <p>Phone number</p>
+                        <h3>40414243</h3>
                     </div>
-                    <div class="pay-information-specific">
-                        <p>Expiration date</p>
-                        <textarea id="expiration-date" name="expiration-date"></textarea>
+                    <div class="pay-information">
+                        <div class="pay-information-specific">
+                            <p>Card number</p>
+                            <textarea id="card-number" name="card-number"></textarea>
+                        </div>
+                        <div class="pay-information-specific">
+                            <p>Expiration date</p>
+                            <textarea id="expiration-date" name="expiration-date"></textarea>
+                        </div>
+                        <div class="pay-information-specific">
+                            <p>CVC</p>
+                            <textarea id="cvc" name="cvc"></textarea>
+                        </div>
+                        <div class="pay-information-specific">
+                            <input type="submit" value="Purchase" id="purchase">
+                        </div>
+                        <div class="pay-information-specific">
+                            <p>Upon purchasing you will be redirected to a page where you can download and watch the film.</p>
+                        </div>
                     </div>
-                    <div class="pay-information-specific">
-                        <p>CVC</p>
-                        <textarea id="cvc" name="cvc"></textarea>
-                    </div>
-                    <div class="pay-information-specific">
-                        <input type="submit" value="Purchase" id="purchase">
-                    </div>
-                    <div class="pay-information-specific">
-                        <p>Upon purchasing you will be redirected to a page where you can watch the film. The film will then be available available for 24  hours.</p>
-                    </div>
+                </div>
+                <div class="headline">
+                    <h1>Other movies</h1>
+                </div>
+                <div class="movie-section">
                 </div>
             </section>
         </main>
@@ -87,5 +98,7 @@
             <a href="about.html" class="navigation-links footer-links">About us</a>
             <a href="contact.html" class="navigation-links footer-links">Contact</a>
         </footer>
+        <script src="js/products.js"></script>
+        <script src="js/addtocart.js"></script>
     </body>
 </html>

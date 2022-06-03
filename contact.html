@@ -30,30 +30,51 @@
     </head>
     <body>
         <header>
-            <section class="header-section">
-                <a href="index.html"><img src="images/squareEyesLogo.png" alt="Square Eyes logo"></a>
-            </section>
-            <section class="header-section">
-                <a href="accountpage.html" class="cta">Sign in</a>
-                <a href="createaccount.html" class="cta">Create account</a>
-            </section>
-            <section class="header-section">
+            <a href="index.html"><img src="images/squareEyesLogo-phone.png" alt="Square Eyes Logo" class="logo"></a>
+            <div class="hamburger_icon_and_menu">
+                <label for="hamburger_menu"><img src="images/icons/hamburger-icon_squareEyes.png" id="hamburger_icon" alt="hamburger-menu"></label>
+                <input type="checkbox" id="hamburger_menu">
                 <nav>
-                    <a href="index.html" class="navigation-links home-link">Home</a>
+                    <a href="index.html" class="navigation-links">Home</a>
                     <a href="films.html" class="navigation-links">Films</a>
                     <a href="about.html" class="navigation-links">About us</a>
-                    <a href="contact.html" class="navigation-links">Contact</a>
+                    <a href="contact.html" class="navigation-links active-link">Contact</a>
+                    <a href="accountpage.html" class="cta">Sign in</a>
+                    <a href="createaccount.html" class="cta">Create account</a>
                 </nav>
-            </section>
-        </header>
+            </div>
+    </header>
         <main>
-            <h1>Contact</h1>
-            <hr>
+            <section class="container">
+                <div class="headline">
+                    <h1>Contact</h1>
+                </div>
+            </section>
             <section class="contact">
                 <p>Something we can help you with?</p>
                 <p>Please write your question here and we'll contact you on email as quickly as possible.</p>
-                <textarea id="message" name="message"></textarea>
-                <input type="submit" value="Send">
+                <form>
+                    <div class="input">
+                        <label for="name">Name (Full name required)</label>
+                        <input type="text" id="name" name="name">
+                        <p class="nameError">Name requires at least 3 characters</p>
+                    </div>
+                    <div class="input">
+                        <label for="subject">Subject (Minimum 10 characters)</label>
+                        <input type="text" id="subject" name="subject">
+                        <p class="subjectError">Subject requires at least 10 characters</p>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email (Must be valid email)</label>
+                        <input type="text" id="email" name="email">
+                        <p class="emailError">Must be valid email format</p>
+                    </div>
+                    <div class="input">
+                        <button type="submit" value="Submit" id="button">Submit</button>
+                    </div>
+                </form>
+                <div class="messageSuccess">
+                </div>
             </section>
             <section>
                 <h4>Otherwise you can contact us here:</h2>
@@ -79,5 +100,6 @@
             <a href="about.html" class="navigation-links footer-links">About us</a>
             <a href="contact.html" class="navigation-links footer-links">Contact</a>
         </footer>
+        <script src="js/form.js"></script>
     </body>
 </html>

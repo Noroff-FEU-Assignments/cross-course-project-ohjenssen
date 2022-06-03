@@ -1,10 +1,7 @@
-main {
-    margin: 10px;
-}
-
 .contact {
     background-color: #D77E13;
     padding: 10px;
+    margin-top: 10px;
 }
 
 textarea {
@@ -26,3 +23,36 @@ textarea {
     display: flex;
     margin-top: 10px;
 }
+
+.input {
+    margin-top: 10px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messageSuccess {
+    background-color: green;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nameError {
+    color: red;
+    display: none;
+    background-color: white;
+  }
+
+  .subjectError {
+    color: red;
+    display: none;
+    background-color: white;
+  }
+
+.emailError {
+    color: red;
+    display: none;
+    background-color: white;
+  }

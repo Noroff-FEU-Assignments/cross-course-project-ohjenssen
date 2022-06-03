@@ -1,111 +1,31 @@
-main {
-    margin: 10px;
-}
-
-
 .profile-picture {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+    width: 300px;
     border: 3px solid #D77E13;
+    margin: 10px;
 }
 
 .account-information {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.details-one {
-    flex: 1;
-}
-
-.details-two {
-    flex: 1;
+.details {
     display: flex;
     flex-direction: column;
 }
 
 .content-images {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+    width: 200px;
     border: 3px solid #D77E13;
+    margin: 10px;
 }
 
 .content-images:hover {
     filter: blur(3px);
 }
 
-.cta-large {
-    margin-top: 20px;
-    font-size: 30px;
-    background-color: #0052B5;
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    align-self: flex-start;
-}
-
-.cta-large:hover {
-    background-color: #4f8edb;
-}
-
-.cta-large-phone {
-    margin-top: 20px;
-    font-size: 30px;
-    background-color: #0052B5;
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    align-self: flex-start;
-    display:none;
-}
-
-@media (min-width: 300px) and (max-width: 500px){
-    .account-information {
-        flex-direction: column;
-    }
-
-    .profile-picture {
-        height: 200px;
-        max-width: 90%;
-    }
-
-    .cta-large {
-        display: none;
-    }
-
-    .cta-large-phone {
-        display: inline;
-    }
-
-    .content-images {
-        height: 100px;
-        min-width: 200px;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 815px) {
-    .profile-picture {
-        height: 200px;
-        max-width: 100%;
-    }
-
-    .content-images {
-        height: 100px;
-        min-width: 200px;
-    }
-}
-
-@media (min-width: 816px) and (max-width: 850px) {
-
-    .content-images {
-        min-height: 200px;
-        min-width: 200px;
-    }
-
-    .my-uploads {
-        display: flex;
-    }
+.uploads {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -30,57 +30,50 @@
     </head>
     <body>
         <header>
-            <section class="header-section">
-                <a href="index.html"><img src="images/squareEyesLogo.png" alt="Square Eyes Logo"></a>
-            </section>
-            <section class="header-section">
-                <a href="accountpage.html" class="cta">Sign in</a>
-                <a href="createaccount.html" class="cta">Create account</a>
-            </section>
-            <section class="header-section">
+            <a href="index.html"><img src="images/squareEyesLogo-phone.png" alt="Square Eyes Logo" class="logo"></a>
+            <div class="hamburger_icon_and_menu">
+                <label for="hamburger_menu"><img src="images/icons/hamburger-icon_squareEyes.png" id="hamburger_icon" alt="hamburger-menu"></label>
+                <input type="checkbox" id="hamburger_menu">
                 <nav>
-                    <a href="index.html" class="navigation-links home-link">Home</a>
+                    <a href="index.html" class="navigation-links active-link">Home</a>
                     <a href="films.html" class="navigation-links">Films</a>
                     <a href="about.html" class="navigation-links">About us</a>
                     <a href="contact.html" class="navigation-links">Contact</a>
+                    <a href="accountpage.html" class="cta">Sign in</a>
+                    <a href="createaccount.html" class="cta">Create account</a>
                 </nav>
-            </section>
-        </header>
+            </div>
+    </header>
         <main>
-            <h1>3:10 To Lillehammer</h1>
-            <hr>
-            <section  class="movie-information">
-                <div>
-                    <img src="images/movieposters/3-10-to-lillehammer.jpg" class="main-movie" alt="Image of the movie 3:10 To Lillehammer">
+            <section class="container">
+                <div class="headline">
+                    <h1>3:10 To Yuma</h1>
+                    <div>
+                        <p>Shopping cart:</p>
+                        <p class="cart-items"></p>
+                        <div class="subtotal"></div>
+                    </div>
                 </div>
-                <div class="movie-information-text">
-                    <p>Short about the movie. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Director: John Doe</p>
-                    <p>Actors: Jim Doe, Jane Doe</p>
-                    <p>Year: 2021</p>
-                    <a href="pay-page.html" class="cta-large">Watch</a>
-                </div> 
+                <div class="movie-information">
+                    <img src="images/movieposters/3-10-to-lillehammer.jpg" class="movie-images" alt="Image of the movie 3:10 To Lillehammer">
+                    <div class="movie-information-text">
+                        <p>Short about the movie. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Director: John Doe</p>
+                        <p>Actors: Jim Doe, Jane Doe</p>
+                        <p>Year: 2021</p>
+                        <button class="addToCart">Add to cart</button>
+                    </div>
+                </div>
             </section>
-            <h3>About the creator</h3>
-            <p>A short sentence about the creators behind the movie to hopefully make he user curious and click on this link. <a href="about.html" class="read-more">Read more.</a></p>
-            <h3>More like this</h3>
-            <section class="more-like-this">
-                <div class="other-movies">
-                    <img src="images/movieposters/danger-zone.jpg" class="movie-images" alt="Image of the movie Danger Zone">
-                    <p>Danger Zone</p>
+            <section class="container">
+                <div class="headline">
+                    <h1>More like this</h1>
                 </div>
-                <div class="other-movies">
-                    <img src="images/movieposters/the-last-man.jpg" class="movie-images" alt="Image of the movie The Last Man">
-                    <p>The Last Man</p>
-                </div>
-                <div class="other-movies">
-                    <img src="images/movieposters/invasion.jpg" class="movie-images" alt="Image of the movie Invasion">
-                    <p>Invasion</p>
-                </div>
-                <div class="other-movies">
-                    <img src="images/movieposters/halloween-chills.png" class="movie-images" alt="Image of the movie Halloween Chills">
-                    <p>Halloween Chills</p>
-                </div>
+                <div class="movie-section">
+                    <!-- <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/3-10-to-lillehammer.jpg"  class="movie-thumbnail" alt="Image of the movie 3:10 To Lillehammer"></a>
+                    <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/3-10-to-lillehammer.jpg"  class="movie-thumbnail" alt="Image of the movie 3:10 To Lillehammer"></a>
+                    <a href="film-3_10_to_lillehammer.html"><img src="images/movieposters/3-10-to-lillehammer.jpg"  class="movie-thumbnail" alt="Image of the movie 3:10 To Lillehammer"></a>
+                </div> -->
             </section>
         </main>
         <footer>
@@ -89,5 +82,7 @@
             <a href="about.html" class="navigation-links footer-links">About us</a>
             <a href="contact.html" class="navigation-links footer-links">Contact</a>
         </footer>
+        <script src="js/products.js"></script>
+        <script src="js/addtocart.js"></script>
     </body>
 </html>
