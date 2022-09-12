@@ -4,7 +4,7 @@ const id = params.get("id");
 
 const container = document.querySelector(".container");
 
-const baseurl = "https://squareeyes.oskarjenssen.com/wp-json/wc/store/products";
+const baseurl = "https://squareeyes.oskarjenssen.com/wp-json/wc/store/products/" + id;
 
 const main = document.querySelector("main");
 const docTitle = document.querySelector("title");
@@ -14,11 +14,11 @@ const getMovie = async (url) => {
         const response = await fetch(url);
         const films = await response.json();
 
-        console.log(films[id]);
+        console.log(baseurl);
 
-        docTitle.innerHTML = `Details: ${films[id].name}`;
+        docTitle.innerHTML = `Details: ${films.name}`;
         container.innerHTML = ` <div class="headline">
-                                    <h1>${films[id].name}</h1>
+                                    <h1>${films.name}</h1>
                                     <div>
                                         <p>Shopping cart:</p>
                                         <p class="cart-items"></p>
@@ -26,9 +26,9 @@ const getMovie = async (url) => {
                                     </div>
                                 </div>
                                 <div class="movie-information">
-                                    <img src="${films[id].images[0].src}" class="movie-images" alt="Image of the movie ${films[id].name}">
+                                    <img src="${films.images[0].src}" class="movie-images" alt="Image of the movie ${films.name}">
                                     <div class="movie-information-text">
-                                        <p>${films[id].description}</p>
+                                        <p>${films.description}</p>
                                         <p>Director: John Doe</p>
                                         <p>Actors: Jim Doe, Jane Doe</p>
                                         <p>Year: 2021</p>

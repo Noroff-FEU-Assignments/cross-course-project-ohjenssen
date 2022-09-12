@@ -9,12 +9,11 @@ const getMovies = async (url) => {
     try {
         const response = await fetch(url);
         const films = await response.json();
-        console.log(films);
 
-        films.forEach((movie, index) => {
+        films.forEach((movie) => {
             movieSection.innerHTML += `
             <div>
-                <a href="details.html?id=${index}"><img src="${movie.images[0].src}"  class="movie-images" alt="Image of the movie 3:10 To Lillehammer"></a>
+                <a href="details.html?id=${movie.id}"><img src="${movie.images[0].src}"  class="movie-images" alt="Image of the movie 3:10 To Lillehammer"></a>
                 <h3>${movie.name}</h3>
                 <button class="addToCart" onclick="addToCart(${movie.id})">Add to cart</button>
             <div>`;
