@@ -17,7 +17,7 @@ Beforehand, we had been given a brief of a website that were to design and creat
     
 Since this was a cross course project, we´ve also gone back on the project several times to implement new things with for example Javascript.
 
-    Built with
+Built with
     HTML
     CSS
     Javascript
