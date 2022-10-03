@@ -1,0 +1,62 @@
+#purchase {
+    font-size: 30px;
+    background-color: #0052B5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.edit {
+    color: #D77E13;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.information {
+    display: flex;
+    max-width: 1000px;
+}
+
+#card-number {
+    object-fit: cover;
+}
+
+.movie-images {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #D77E13;
+} 
+
+@media (min-width: 300px) and (max-width: 500px){
+     
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pay-information {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        max-width: 290px;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 650px){
+     
+    .pay-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

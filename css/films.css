@@ -1,0 +1,46 @@
+.movie-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.movie-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie-images {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #D77E13;
+} 
+
+.movie-images:hover {
+    filter: blur(3px);
+} 
+
+/* .movie-search {
+    display: flex;
+} */
+
+/* #search-films {
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #D77E13;
+    border-radius: 5px;
+} */
+
+.categories {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories div {
+    margin-right: 10px;
+    white-space: nowrap;
+}

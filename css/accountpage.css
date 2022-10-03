@@ -1,0 +1,31 @@
+.profile-picture {
+    width: 300px;
+    border: 3px solid #D77E13;
+    margin: 10px;
+}
+
+.account-information {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-images {
+    width: 200px;
+    border: 3px solid #D77E13;
+    margin: 10px;
+}
+
+.content-images:hover {
+    filter: blur(3px);
+}
+
+.uploads {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

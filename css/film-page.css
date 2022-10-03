@@ -1,0 +1,37 @@
+.movie-images {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #D77E13;
+} 
+
+.movie-information {
+    display: flex;
+    margin-top: 10px;
+}
+
+.movie-information-text {
+    margin-left: 10px;
+}
+
+.movie-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.movie-thumbnail:hover {
+    filter: blur(3px);
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    .main-movie {
+        max-width: 280px;
+    }
+
+    .movie-information {
+        display: flex;
+        flex-direction: column;
+    }
+}

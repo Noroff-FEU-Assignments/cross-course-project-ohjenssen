@@ -1,0 +1,41 @@
+.main-content {
+    display: flex;
+    margin: 5px;
+}
+
+.main-text {
+    margin: 5px;
+}
+
+.main-image {
+    margin: 5px;
+    border: 4px solid #D77E13;
+}
+
+.home-link {
+    border-bottom: 3px solid #D77E13;
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-image {
+        max-height: 175px;
+        max-width: 100%;
+    }
+
+}
