@@ -27,5 +27,8 @@ Since this was a cross course project, we´ve also gone back on the project seve
 1. Clone the repo
 2. Open up in a codeeditor
 
-Running
+### Running
 Run the page for example through VSCode Liveshare extension.
+
+## Contact
+If you have any questions, please contact me on my personal mail oskar_jenssen@hotmail.com
