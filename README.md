@@ -1,11 +1,11 @@
 # cross-course-project-ohjenssen
 cross-course-project-ohjenssen created by GitHub Classroom
 
-Cross course project - Square Eyes
+#Cross course project - Square Eyes
 
 The cross course project was a school project. The goal was to put everything learned in HTML and CSS into learning and deliver a functional and responsive website.
 
-Description
+##Description
 Beforehand, we had been given a brief of a website that were to design and create a working prototype for. In the cross course project we were to actually write the code for the page. These were the requirements:
 
     The HTML should be semantic and neat.
@@ -17,14 +17,15 @@ Beforehand, we had been given a brief of a website that were to design and creat
     
 Since this was a cross course project, we´ve also gone back on the project several times to implement new things with for example Javascript.
 
-    Built with
+##Built with
     HTML
     CSS
     Javascript
     
-Getting stated
-Installing
-1. Clone the repo:
+##Getting stated
+###Installing
+1. Clone the repo
+2. Open up in a codeeditor
 
 Running
-Run the page through VSCodes Liveshare extension.
+Run the page for example through VSCode Liveshare extension.
