@@ -5,6 +5,8 @@ cross-course-project-ohjenssen created by GitHub Classroom
 
 The cross course project was a school project. The goal was to put everything learned in HTML and CSS into learning and deliver a functional and responsive website.
 
+![Alt text](/images/squareeyesScreenshot.png?raw=true "Optional Title")
+
 ## Description
 Beforehand, we had been given a brief of a website that were to design and create a working prototype for. In the cross course project we were to actually write the code for the page. These were the requirements:
 
